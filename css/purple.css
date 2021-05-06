@@ -1,49 +1,25 @@
 @charset "utf-8";
-* {
-  font-size: 62.5%;
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-body{
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-}
 .name_wrap p{
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 65%;
-  transform: translate(-50%,-50%);
-  font-size: 3.2rem;
   text-shadow: 0px 0px 6px purple;
-  color: #fff;
 }
 .customer_wrap{
-  width: 36vh;
-  height: 36vh;
   background: #a18cd1;
   background: linear-gradient(45deg, #a18cd1 0%, #fbc2eb 100%);
 }
+.customer_data{
+  border:2px solid darkmagenta;
+}
+.profile_wrap p:nth-of-type(1){
+  background-color: darkmagenta;
+}
 .sns_back{
   background: url(../images/purple_sns.png)center/auto 100% no-repeat;
-  height: 20vh;
-  top: 6vh;
-  padding-top: calc(20vh * 0.1);
-}
-
-img{
-  width: 100%;
-	vertical-align: bottom;
 }
 .wrap{
-  position: relative;
   background: url(../images/purple_screen.png)center/ 100% 100% no-repeat;
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
+
+/* アニメーション */
 .star01,
 .star02{
   position: fixed;
