@@ -1,0 +1,163 @@
+@charset "utf-8";
+* {
+  font-size: 62.5%;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+  vertical-align: bottom;
+}
+body{
+  overflow: hidden;
+}
+li{
+  list-style: none;
+}
+.wrap{
+  position: relative;
+  background: url(./images/purple_screen.png)center/ 100% 100% no-repeat;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.customer_wrap,
+.customer_data,
+.sns_back{
+  position: relative;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 3;
+}
+.customer_wrap{
+  width: 36vh;
+  height: 36%;
+}
+.customer_wrap img{
+  width: 94%;
+  height: 94%;
+  margin: 3%;
+}
+.customer_data{
+  width: 36vh;
+  height: 25%;
+  background-color: #fff;
+  overflow: hidden;
+  border:2px solid gold;
+}
+.shop_wrap{
+  float: left;
+  width: 9vh;
+  height: 9%;
+  display: inline-block;
+}
+.name_wrap{
+  position: relative;
+  float: left;
+  width: calc(100% - 9vh);
+  height: 9vh;
+}
+.profile_wrap{
+  display: block;
+  text-align: center;
+}
+/* .profile_wrap p:nth-of-type(1){
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  border-bottom: 1px dashed #000 ;
+  display: inline-block;
+  margin: 0 0 6% 0;
+} */
+.profile_wrap p:nth-of-type(1){
+  padding: 3px 8px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: gold;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  display: inline-block;
+  margin: 0 0 6% 0;
+}
+.profile_wrap p:nth-of-type(2){
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  line-height: 2.4rem;
+}
+.name_wrap p{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%,-50%);
+  font-size: 3.2rem;
+  color: #fff;
+}
+.sns_back{
+  height: 20%;
+  top: 8%;
+  padding-top: calc(20% * 0.2);
+}
+.sns_back ul{
+  margin: 0 25%;
+  width: 50%;
+  height: 80%;
+}
+.sns_back li{
+  width: calc(100% / 3);
+  height: calc(100% / 2);
+  display: inline-block;
+  float: left;
+  z-index: 10;
+}
+.sns_back img{
+  width: 80%;
+  height: auto;
+  margin: 10%;
+}
+.star01,
+.star02{
+  z-index: 1;
+}
+
+
+.fix_icon{
+  position: fixed;
+  width: 12%;
+  height: 12%;
+  top: 2%;
+  right: 5%;
+  z-index: 100;
+}
+.box{
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+  background-color: #000;
+}
+.box img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50%;
+}
+.active{
+  opacity: 1;
+}
+@media screen and (max-width:767px) {
+}
+@media screen and (min-width:768px) {
+}
+
